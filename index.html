@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+	<body class="grid-container">
+		<header>
+			<h1 id="title">Game Survey Form</h1>
+			<p id="description">Thank you for taking the time to help us improve our game</p>
+		</header>
+		<form id="survey-form" action="">
+			<div id="user-info">
+				<label for="name" id="name-label">Name</label>
+				<input type="text" id="name" placeholder="Enter your name" required />
+				<label for="email" id="email-label">Email</label>
+				<input type="email" id="email" placeholder="Enter your email" required />
+				<label for="number" id="number-label">League Number</label>
+				<input type="number" id="number" min="1" max="10" placeholder="Enter your League Number" />
+			</div>
+			<div>
+				<label for="dropdown">League</label>
+				<select id="dropdown" name="league">
+					<option disabled selected>Select a League</option>
+					<option value="unranked">Unranked</option>
+					<option value="bronze">Bronze</option>
+					<option value="silver">Silver</option>
+					<option value="gold">Gold</option>
+					<option value="diamond">Diamond</option>
+				</select>
+			</div>
+			<div>
+				<p>Would you recommend our game to a friend?</p>
+				<label><input type="radio" name="user-recommendation" value="definitely" />Definitely</label>
+				<label><input type="radio" name="user-recommendation" value="maybe" />Maybe</label>
+				<label><input type="radio" name="user-recommendation" value="nope" />Nope</label>
+			</div>
+			<div>
+				<p>What are your favorite features?</p>
+				<label><input type="checkbox" name="favorite-features" value="no paywall" />No paywall</label>
+				<label><input type="checkbox" name="favorite-features" value="quick matches" />Quick matches</label>
+				<label><input type="checkbox" name="favorite-features" value="cool skins" />Cool skins</label>
+				<label><input type="checkbox" name="favorite-features" value="others" />Others</label>
+			</div>
+			<div>
+				<p>Any additional comments/suggestions?</p>
+				<textarea placeholder="Enter your comments here" name="comment"></textarea>
+			</div>
+			<input type="submit" id="submit" />
+		</form>
+		<footer>
+			<a href="https://www.freepik.com/vectors/background">Background vector created by upklyak - www.freepik.com</a>
+		</footer>
+	</body>
+</html>
