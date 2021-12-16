@@ -40,13 +40,48 @@ footer {
 #title {
 	display: grid;
 	place-items: center;
+	margin-block-start: 0.55em;
+	margin-block-end: 0.55em;
 }
 textarea {
 	width: 100%;
 	resize: vertical;
+	border: none;
+	outline: none;
+	background: #e1dffd;
+	border-radius: 3px;
+	padding-top: 7.5px;
+	margin-bottom: 12px;
+}
+textarea:focus::placeholder {
+	color: transparent;
+}
+textarea::placeholder {
+	transition: color 0.3s ease-out;
 }
 #submit {
-	position: relative;
-	left: 30%;
-	width: 40%;
+	background: #7c75c9;
+	border: none;
+	border-radius: 10px;
+	padding: 10px;
+	width: 50%;
+	margin: auto;
+	display: grid;
+	place-items: center;
+}
+#submit:focus {
+	background: #a39ed9;
+}
+.input-area {
+	border: none;
+	outline: none;
+	background: #e1dffd;
+	border-radius: 3px;
+	padding: 7.5px;
+}
+.input-area:focus::placeholder {
+	color: transparent;
+}
+.input-area::placeholder {
+	transition: color 0.3s ease-out;
 }
